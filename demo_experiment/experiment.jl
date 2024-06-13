@@ -4,8 +4,18 @@ using PetscCall
 using LinearAlgebra
 using FileIO
 using JLD2
+using SparseArrays
 
 muladd!(y,A,x) = mul!(y,A,x,1,1)
+
+
+function create_sparse_lower_triangular_matrix(size)
+    I = [i for i in 1:size for j in 1:i]
+    J = [j for i in 1:size for j in 1:i]
+    V = rand(length(I))  # Random values for the non-zero elements
+    sparse(I, J, V, size, size)
+end
+
 
 function spmv!(b,A,x)
     t5 = @elapsed begin
@@ -66,7 +76,8 @@ function experiment(distribute,params,irun)
     np = prod(parts_per_dir)
     ranks = LinearIndices((np,)) |> distribute
     # Build a test matrix A and a test vector x
-    A = PartitionedArrays.laplace_matrix(nodes_per_dir,parts_per_dir,ranks)
+    size = prod(nodes_per_dir)
+    A = create_sparse_lower_triangular_matrix(size)
     rows = partition(axes(A,1))
     cols = partition(axes(A,2))
     x = pones(cols)
