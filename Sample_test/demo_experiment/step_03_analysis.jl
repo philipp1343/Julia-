@@ -1,15 +1,14 @@
 using FileIO
 using JLD2
 using DataFrames
+using CSV
 
 # Read result files and put them into a data frame
 path = pwd()
 files = readdir(path)
-files = filter(f->occursin(".jld2",f),files)
-dicts = map(f->load(joinpath(path,f)),files)
+files = filter(f -> occursin(".jld2", f), files)
+dicts = map(f -> load(joinpath(path, f)), files)
 df = DataFrame(dicts)
 
-display(df)
-
-# TODO analyse the content of the data frame to produce figures, tables etc
-
+# Save the DataFrame into a .csv file
+CSV.write("output.csv", df)
