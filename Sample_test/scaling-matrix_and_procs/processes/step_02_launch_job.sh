@@ -25,7 +25,7 @@ export NUM_THREADS=1
 # NB! the value passed to np needs to coincide with prod(parts_per_dir)
 MPIFLAGS="--map-by node:span --rank-by core"
 JULIAFLAGS="--project=. --check-bounds=no -O3"
-mpiexec -np 32 $MPIFLAGS  julia $JULIAFLAGS -e '
+mpiexec -np 1 $MPIFLAGS  julia $JULIAFLAGS -e '
     include("experiment.jl")
     with_mpi() do distribute
         params = Dict(
