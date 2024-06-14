@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --time=00:15:00
-#SBATCH -N 6
+#SBATCH -N 2
 #SBATCH -e error.txt
 #SBATCH -o output.txt
 #SBATCH --ntasks-per-node=24
