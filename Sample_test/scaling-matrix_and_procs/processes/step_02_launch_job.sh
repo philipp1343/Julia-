@@ -4,7 +4,7 @@
 #SBATCH -e error.txt
 #SBATCH -o output.txt
 #SBATCH --ntasks-per-node=24
-
+#test
 module load julia/1.10.3
 module load intel/mkl/64/11.2/2015.5.223
 module load openmpi/gcc/64/4.0.2
