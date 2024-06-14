@@ -12,7 +12,7 @@ muladd!(y,A,x) = mul!(y,A,x,1,1)
 function create_sparse_lower_triangular_matrix(size)
     I = [i for i in 1:size for j in 1:i]
     J = [j for i in 1:size for j in 1:i]
-    V = rand(length(I))  # Random values for the non-zero elements
+    V = rand(length(I))  
     sparse(I, J, V, size, size)
 end
 
