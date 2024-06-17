@@ -30,7 +30,7 @@ mpiexec -np 32 $MPIFLAGS  julia $JULIAFLAGS -e '
     with_mpi() do distribute
         params = Dict(
             "parts_per_dir"=>(4,4,2),
-            "nodes_per_dir"=>(10,10,10),
+            "nodes_per_dir"=>(30,10,10),
            )
         nruns = 4
         main(distribute,params,nruns)
