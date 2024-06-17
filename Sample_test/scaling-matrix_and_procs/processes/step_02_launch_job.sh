@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --time=00:15:00
-#SBATCH -N 14
+#SBATCH -N 1
 #SBATCH -e error.txt
 #SBATCH -o output.txt
 #SBATCH --ntasks-per-node=32
@@ -25,12 +25,12 @@ export NUM_THREADS=1
 # NB! the value passed to np needs to coincide with prod(parts_per_dir)
 MPIFLAGS="--map-by node:span --rank-by core"
 JULIAFLAGS="--project=. --check-bounds=no -O3"
-mpiexec -np 64 $MPIFLAGS  julia $JULIAFLAGS -e '
+mpiexec -np 32 $MPIFLAGS  julia $JULIAFLAGS -e '
     include("experiment.jl")
     with_mpi() do distribute
         params = Dict(
-            "parts_per_dir"=>(4,4,4),
-            "nodes_per_dir"=>(100,100,100),
+            "parts_per_dir"=>(4,4,2),
+            "nodes_per_dir"=>(10,10,10),
            )
         nruns = 4
         main(distribute,params,nruns)
