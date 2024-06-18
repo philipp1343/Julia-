@@ -1,3 +1,0 @@
-module julia/1.7.3 has been unloaded.
-slurmstepd: error: *** JOB 4842620 ON node060 CANCELLED AT 2024-06-17T14:39:02 DUE TO TIME LIMIT ***
-mpiexec: Forwarding signal 18 to job

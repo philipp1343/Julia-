@@ -3,7 +3,7 @@
 #SBATCH -N 1
 #SBATCH -e error.txt
 #SBATCH -o output.txt
-#SBATCH --ntasks-per-node=28
+#SBATCH --ntasks-per-node=32
 #test
 module load julia/1.10.3
 module load intel/mkl/64/11.2/2015.5.223
