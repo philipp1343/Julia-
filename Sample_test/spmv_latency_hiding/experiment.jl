@@ -36,7 +36,7 @@ function spmv_without_LH!(b, A, x)
         "t_mul" => t2,
         "t_wait" => t3,
         "t_muladd" => t4,
-        "t_spmv" => t5,
+        "t_spmv_without_LH" => t5,
     )
 end
 
