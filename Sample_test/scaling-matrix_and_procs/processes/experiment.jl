@@ -4,6 +4,7 @@ using PetscCall
 using LinearAlgebra
 using FileIO
 using JLD2
+using Random
 
 muladd!(y,A,x) = mul!(y,A,x,1,1)
 
@@ -58,66 +59,69 @@ function spmv_petsc!(b,A,x)
      "t_cleanup"=>t4)
 end
 
-function experiment(distribute,params,irun)
+
+function create_random_ijv(rank, num_rows, num_cols, num_entries)
+    I = rand(1:num_rows, num_entries)
+    J = rand(1:num_cols, num_entries)
+    V = rand(num_entries)
+    return I, J, V
+end
+
+function experiment(distribute, params, irun)
     # Read params
     nodes_per_dir = params["nodes_per_dir"]
     parts_per_dir = params["parts_per_dir"]
-    # Init partitioned arrays
-    #np = prod(parts_per_dir)
-    np = 3
-    ranks = LinearIndices((np,)) |> distribute
+    num_rows = params["num_rows"]
+    num_cols = params["num_cols"]
+    num_entries_per_rank = params["num_entries_per_rank"]
     
+    # Init partitioned arrays
+    np = prod(parts_per_dir)
+    ranks = LinearIndices((np,)) |> distribute
+
     IJV = map(ranks) do rank
-        if rank == 1
-            V = [2,1,6,4,5,3,1]
-            I = [1,3,1,3,1,2,2]
-            J = [1,2,3,3,5,5,7]
-        elseif rank == 2
-            V = [1,1,3,8,7,5]
-            I = [5,4,5,4,5,6]
-            J = [2,4,4,6,8,8]
-        else
-            V = [6,1,2,2,8,7]
-            I = [7,9,8,7,9,8]
-            J = [1,1,3,6,6,8]
-        end
-        I,J,V
+        create_random_ijv(rank, num_rows, num_cols, num_entries_per_rank)
     end
 
-    I,J,V = tuple_of_arrays(IJV)
-    row_partition = uniform_partition(ranks,9)
-    A = psparse(I,J,V,row_partition,row_partition) |> fetch
+    I, J, V = tuple_of_arrays(IJV)
+    row_partition = uniform_partition(ranks, num_rows)
+    A = psparse(I, J, V, row_partition, row_partition) |> fetch
 
-    rows = partition(axes(A,1))
-    cols = partition(axes(A,2))
+    rows = partition(axes(A, 1))
+    cols = partition(axes(A, 2))
     x = pones(cols)
+    
     # Do the spmv both in julia and petsc
     b1 = pzeros(rows)
     b2 = pzeros(rows)
-    t_julia = spmv!(b1,A,x)
-    t_petsc = spmv_petsc!(b2,A,x)
+    t_julia = spmv!(b1, A, x)
+    t_petsc = spmv_petsc!(b2, A, x)
+    
     # Check that both results agree
-    c = b1-b2
-    rel_error = norm(c)/norm(b1)
-    # Prepare results this in the current MPI process
-    results = merge(t_julia,t_petsc)
+    c = b1 - b2
+    rel_error = norm(c) / norm(b1)
+    
+    # Prepare results in the current MPI process
+    results = merge(t_julia, t_petsc)
     results["rel_error"] = rel_error
     result_keys = keys(results)
-    # Gather all dics in the main process
-    results_in_main = gather(map(rank->results,ranks))
-    # Only in the main proces do:
+    
+    # Gather all dicts in the main process
+    results_in_main = gather(map(rank -> results, ranks))
+    
+    # Only in the main process do:
     map_main(results_in_main) do all_results
         # Merge the results of all processes into a single dict
-        dict = Dict( ( k=>map(r->r[k],all_results) for k in result_keys ))
+        dict = Dict((k => map(r -> r[k], all_results) for k in result_keys))
         # Include also the input params and irun in the dict
-        dict = merge(dict,params)
+        dict = merge(dict, params)
         dict["irun"] = irun
         # Create a jobname that is unique for each combination
         # of parameters and run id
-        jobname = String(sprint(show,hash(params))[3:end])
-        jld2_file = jobname*"_results_$irun.jld2"
+        jobname = String(sprint(show, hash(params))[3:end])
+        jld2_file = jobname * "_results_$irun.jld2"
         # Save to file
-        save(jld2_file,dict)
+        save(jld2_file, dict)
     end
 end
 
