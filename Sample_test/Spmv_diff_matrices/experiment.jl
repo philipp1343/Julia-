@@ -65,37 +65,8 @@ function experiment(distribute,params,irun)
     # Init partitioned arrays
     np = prod(parts_per_dir)
     ranks = LinearIndices((np,)) |> distribute
-    
-    row_partition = uniform_partition(ranks,n)
-
-    IJV = map(row_partition) do row_indices
-        I,J,V = Int[], Int[], Float64[]
-        for global_row in local_to_global(row_indices)
-            if global_row in (1,n)
-                push!(I,global_row)
-                push!(J,global_row)
-                push!(V,1.0)
-            else
-                push!(I,global_row)
-                push!(J,global_row-1)
-                push!(V,-1.0)
-                push!(I,global_row)
-                push!(J,global_row)
-                push!(V,2.0)
-                push!(I,global_row)
-                push!(J,global_row+1)
-                push!(V,-1.0)
-            end
-        end
-        I,J,V
-    end
-    
-    I,J,V = tuple_of_arrays(IJV)
-    
-    col_partition = row_partition
-    
-    A = psparse(I,J,V,row_partition,col_partition) |> fetch
-
+    # Build a test matrix A and a test vector x
+    A = PartitionedArrays.laplace_matrix(nodes_per_dir,parts_per_dir,ranks)
     rows = partition(axes(A,1))
     cols = partition(axes(A,2))
     x = pones(cols)

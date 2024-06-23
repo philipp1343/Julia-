@@ -1,0 +1,15 @@
+[MPIPreferences]
+__clear__ = ["preloads_env_switch"]
+_format = "1.0"
+abi = "OpenMPI"
+binary = "system"
+cclibs = []
+libmpi = "libmpi"
+mpiexec = "mpiexec"
+preloads = []
+
+[PetscCall]
+PetscInt = "Int64"
+PetscScalar = "Float64"
+libpetsc_path = "/cm/shared/package/petsc/3.16.1/lib/libpetsc.so"
+libpetsc_provider = "system"
