@@ -64,8 +64,9 @@ function experiment(distribute,params,irun)
     parts_per_dir = params["parts_per_dir"]
     # Init partitioned arrays
     #np = prod(parts_per_dir)
-    ranks = LinearIndices((np,)) |> distribute
     np = 3
+    ranks = LinearIndices((np,)) |> distribute
+    
     ranks = DebugArray(LinearIndices((np,)))
     IJV = map(ranks) do rank
         if rank == 1
