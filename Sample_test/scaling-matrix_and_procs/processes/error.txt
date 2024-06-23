@@ -1,0 +1,1157 @@
+
+[11591] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+
+[11575] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+
+[11596] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+
+[11587] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+_start at ./client.jl:552
+
+[11573] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+_start at ./client.jl:552
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+
+[11569] signal (11.1): Segmentation fault
+in expression starting at none:3
+
+[11593] signal (11.1): Segmentation fault
+in expression starting at none:3
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+unknown function (ip: 0x2aaae6493f8c)
+ibv_create_comp_channel at /lib64/libibverbs.so.1 (unknown line)
+udcm_component_query at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+opal_btl_openib_connect_base_select_for_local_port at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+btl_openib_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_btl_openib.so (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+mca_btl_base_select at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libopen-pal.so.40 (unknown line)
+mca_bml_r2_component_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/openmpi/mca_bml_r2.so (unknown line)
+mca_bml_base_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+
+[11566] signal (15): Terminated
+in expression starting at none:3
+
+[11567] signal (15): Terminated
+in expression starting at none:3
+
+[11571] signal (15): Terminated
+in expression starting at none:3
+
+[11577] signal (15): Terminated
+in expression starting at none:3
+
+[11579] signal (15): Terminated
+in expression starting at none:3
+
+[11581] signal (15): Terminated
+in expression starting at none:3
+
+[11583] signal (15): Terminated
+in expression starting at none:3
+
+[11585] signal (15): Terminated
+in expression starting at none:3
+
+[11589] signal (15): Terminated
+in expression starting at none:3
+
+[11650] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11651] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11653] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11655] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11657] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11659] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11661] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11663] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11665] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11667] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11669] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11671] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11673] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11675] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11678] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[11681] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 13 with PID 0 on node node062 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+d]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+
+[16314] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+
+[16316] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[16321] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+
+[16324] signal (15): Terminated
+in expression starting at none:3
+nanosleep at /lib64/libc.so.6 (unknown line)
+usleep at /lib64/libc.so.6 (unknown line)
+ompi_mpi_init at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /cm/shared/package/openmpi/gcc/64/4.0.2/lib/libmpi.so (unknown line)
+MPI_Init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/api/generated_api.jl:1899 [inlined]
+_init_thread at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:207 [inlined]
+#Init#6 at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:127
+Init at /home/phi900/.julia/packages/MPI/z2owj/src/environment.jl:114 [inlined]
+#with_mpi#93 at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:66
+unknown function (ip: 0x2aaac8beeca3)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+with_mpi at /home/phi900/.julia/packages/PartitionedArrays/rww2f/src/mpi_array.jl:64
+unknown function (ip: 0x2aaac8beb1b5)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+do_call at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:126
+eval_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:223
+eval_stmt_value at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:174 [inlined]
+eval_body at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:617
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/interpreter.c:775
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:934
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:877
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/toplevel.c:985
+eval at ./boot.jl:385 [inlined]
+exec_options at ./client.jl:291
+_start at ./client.jl:552
+jfptr__start_82726.1 at /cm/shared/package/julia/julia-1.10.3/lib/julia/sys.so (unknown line)
+_jl_invoke at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:2895 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/gf.c:3077
+jl_apply at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/julia.h:1982 [inlined]
+true_main at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:582
+jl_repl_entrypoint at /cache/build/builder-amdci4-2/julialang/julia-release-1-dot-10/src/jlapi.c:731
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8)
+unknown function (ip: (nil))
+Allocations: 4671674 (Pool: 4669027; Big: 2647); GC: 5
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 4 with PID 0 on node node060 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

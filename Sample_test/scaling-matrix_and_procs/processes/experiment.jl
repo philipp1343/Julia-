@@ -65,7 +65,7 @@ function experiment(distribute,params,irun)
     # Init partitioned arrays
     np = prod(parts_per_dir)
     ranks = LinearIndices((np,)) |> distribute
-    
+    n = prod(nodes_per_dir)
     row_partition = uniform_partition(ranks,n)
 
     IJV = map(row_partition) do row_indices
