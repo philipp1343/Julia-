@@ -63,38 +63,30 @@ function experiment(distribute,params,irun)
     nodes_per_dir = params["nodes_per_dir"]
     parts_per_dir = params["parts_per_dir"]
     # Init partitioned arrays
-    np = prod(parts_per_dir)
+    #np = prod(parts_per_dir)
     ranks = LinearIndices((np,)) |> distribute
-    
-    row_partition = uniform_partition(ranks,n)
-
-    IJV = map(row_partition) do row_indices
-        I,J,V = Int[], Int[], Float64[]
-        for global_row in local_to_global(row_indices)
-            if global_row in (1,n)
-                push!(I,global_row)
-                push!(J,global_row)
-                push!(V,1.0)
-            else
-                push!(I,global_row)
-                push!(J,global_row-1)
-                push!(V,-1.0)
-                push!(I,global_row)
-                push!(J,global_row)
-                push!(V,2.0)
-                push!(I,global_row)
-                push!(J,global_row+1)
-                push!(V,-1.0)
-            end
+    np = 3
+    ranks = DebugArray(LinearIndices((np,)))
+    IJV = map(ranks) do rank
+        if rank == 1
+            V = [2,1,6,4,5,3,1]
+            I = [1,3,1,3,1,2,2]
+            J = [1,2,3,3,5,5,7]
+        elseif rank == 2
+            V = [1,1,3,8,7,5]
+            I = [5,4,5,4,5,6]
+            J = [2,4,4,6,8,8]
+        else
+            V = [6,1,2,2,8,7]
+            I = [7,9,8,7,9,8]
+            J = [1,1,3,6,6,8]
         end
         I,J,V
     end
-    
+
     I,J,V = tuple_of_arrays(IJV)
-    
-    col_partition = row_partition
-    
-    A = psparse(I,J,V,row_partition,col_partition) |> fetch
+    row_partition = uniform_partition(ranks,9)
+    A = psparse(I,J,V,row_partition,row_partition) |> fetch
 
     rows = partition(axes(A,1))
     cols = partition(axes(A,2))
