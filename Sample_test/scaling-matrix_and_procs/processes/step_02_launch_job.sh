@@ -29,7 +29,7 @@ mpiexec -np 3 $MPIFLAGS  julia $JULIAFLAGS -e '
     include("experiment.jl")
     with_mpi() do distribute
         params = Dict(
-            "parts_per_dir"=>(4,4,2),
+            "parts_per_dir"=>(1,1,2),
             "nodes_per_dir"=>(100,100,100),
            )
         nruns = 4

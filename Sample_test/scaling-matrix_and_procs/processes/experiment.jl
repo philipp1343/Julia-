@@ -67,7 +67,6 @@ function experiment(distribute,params,irun)
     np = 3
     ranks = LinearIndices((np,)) |> distribute
     
-    ranks = DebugArray(LinearIndices((np,)))
     IJV = map(ranks) do rank
         if rank == 1
             V = [2,1,6,4,5,3,1]
