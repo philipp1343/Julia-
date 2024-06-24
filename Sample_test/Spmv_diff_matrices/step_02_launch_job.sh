@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --time=00:15:00
-#SBATCH -N 4
+#SBATCH -N 8
 #SBATCH -e error.txt
 #SBATCH -o output.txt
 #SBATCH --ntasks-per-node=32
@@ -29,7 +29,7 @@ mpiexec -np 128 $MPIFLAGS  julia $JULIAFLAGS -e '
     include("experiment.jl")
     with_mpi() do distribute
         params = Dict(
-            "parts_per_dir"=>(8,4,4),
+            "parts_per_dir"=>(8,8,4),
             "nodes_per_dir"=>(250,200,10),
            )
         nruns = 25
