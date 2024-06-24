@@ -12,3 +12,8 @@ df = DataFrame(dicts)
 
 # Save the DataFrame into a .csv file
 CSV.write("output.csv", df)
+
+# Delete all .jld2 files
+for file in files
+    rm(joinpath(path, file))
+end
